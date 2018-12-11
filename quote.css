@@ -1,0 +1,176 @@
+*{
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  flex-direction: column;
+  font-family: 'Cabin Sketch', cursive;
+}
+html, body, #root, #wrapper,#banner,#aboutMe, #mySkills, .skillSet, #skills, #projects{
+  display: flex;
+}
+
+#root, #wrapper{
+  height: 100%;
+  margin: 0;
+  flex-direction: column;
+}
+#aboutMe, #banner, #projects {}
+#banner{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("banner.JPG")
+}
+#bannerText, #callToAction{
+  text-shadow: 3px 2px 8px #E2E2E2
+}
+#bannerText{
+font-size: 3em;
+}
+#callToAction{
+  font-size: 2em;
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+  padding: .3em;
+  box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.55);
+}
+#aboutMe{
+  min-height: 55vh;
+  background-image: linear-gradient(40deg, #258EA6, #62BBC1);
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3em;
+}
+.aboutMeText{
+  text-align: center;
+  align-self: center;
+  font-size: .9em;
+  width: 100%;
+  padding: 1em 3em 2em 3em;
+}
+#code, #framework_icon, #design_icon{
+margin-bottom: 1em;
+}
+#Mytools{
+  font-size: 3.3vw;
+}
+#mySkills{
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+}
+.skillSet{
+  margin: 0 .5em 0 .5em;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+font-size: .7em;
+}
+.skillsTitle{
+  text-align: center;
+  font-size: 3vw;
+  margin-bottom: 1.5em;
+}
+#skills {
+  flex-direction: column;
+  align-items: center;
+}
+#skills{
+  background-color: white;
+  width: 80vw;
+  flex-basis: auto;
+  min-height: 15em;
+  padding-bottom: 2em;
+  border-radius: 20px;
+  border-style: groove;
+  border-width: 1px;
+  border-color: #99E1D9;
+  box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.55);
+}
+#banner{
+  background-color: White;
+  min-height: 100vh;
+}
+#projectWrapper{
+  margin-top: 13em;
+  text-align: center;
+  align-items: center;
+}
+#projects{
+  min-height: 100vh;
+  margin-top: 1em;
+  width: 100vw;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h4{
+
+}
+.col{
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 2em 1em 0 1em;
+}
+#footer{
+    margin-top: 5em;
+    min-height: 30vh;
+    background-color: #FAE7D7;
+    text-align: center;
+}
+@media (min-width: 530px) {
+  #skills{
+    max-width: 69vw;
+  }
+}
+@media (min-width: 769px) {
+  #projects{
+      flex-direction: row;
+  }
+}
+@media (min-width: 850px) {
+ #projectWrapper{
+   margin-top: 20em
+ }
+}
+@media (min-width: 850px) {
+ #skills{
+   max-height: 23em;
+ }
+ #Mytools{
+   font-size: 1.6em;
+ }
+.aboutMeText p{
+  max-width: 60vw;
+  text-align: center;
+  display: inline-block;
+}
+ #skillsTitle{
+   font-size: 1em;
+ }
+ .skillSet{
+   max-height: 20em;
+ }
+}
+@media (min-width: 960px) {
+  .skillSet li{
+    font-size: 1.6em;
+  }
+  .skillSet{
+    max-height: 29em;
+  }
+  #skills{
+    width: 60vw;
+  }
+  .skillsTitle{
+    font-size: 1.4em;
+  }
+  .aboutMeText p{
+    max-width: 50vw;
+  }
+}
