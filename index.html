@@ -9,7 +9,7 @@
   <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-  <link rel="stylesheet" href="quote.css">
+  <link rel="stylesheet" href="portfolio.css">
   <style>
   @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
   </style>
@@ -22,55 +22,7 @@
 </html>
 
 <script type="text/babel">
-const resumeimg = (
-<img
-  height="141.5px"
-  width="300px"
-  src="Projects\Resume.JPG"
-  alt=""
-  display="inline-block"
-  />
-)
-const funkyimg = (
-<img
-  height="141.5px"
-  width="300px"
-  src="Projects\funkycolors.JPG"
-  alt=""
-  />
-)
-const Jsclockimg = (
-<img
-  height="141.5px"
-  width="300px"
-  src="Projects\Jsclock.JPG"
-  alt=""
-  />
-)
-const quoteimg = (
-<img
-  height="141.5px"
-  width="300px"
-  src="Projects\quoteGen.JPG"
-  alt=""
-  />
-)
-const Tributeimg = (
-<img
-  height="141.5px"
-  width="300px"
-  src="Projects\Tribute.JPG"
-  alt=""
-  />
-)
-const quizimg = (
-<img
-  height="141.5px"
-  width="300px"
-  src="Projects\typeofclimber.JPG"
-  alt=""
-  />
-)
+
 const Code_icon = (
   <img
     width="100vw"
@@ -163,33 +115,83 @@ class About extends React.Component {
     )
   }
 }
+
 class Projects extends React.Component {
   render(){
     return(
-    <div id="projectWrapper">
-    <h2>My Projects</h2>
-      <div id="projects">
-        <div className="col">
-          <a target="_blank" href="https://ryanbooth21.github.io/Ryan-Resume/"><h4>Interactive Resume</h4>{resumeimg}</a>
-          <a target="_blank" href="https://ryanbooth21.github.io/Funky-Colors/"><h4>Random Color Generator</h4>{funkyimg}</a>
-          <a target="_blank" href="https://ryanbooth21.github.io/Js-time/"><h4>Javascript Digital Clock</h4>{Jsclockimg}</a>
+      <div id="projectWrapper">
+        <h2 id="projectsTitle">My Projects</h2>
+        <div id="projects">
+          <div className="projCol">
+          <a target="_blank" href="https://ryanbooth21.github.io/Funky-Colors/">
+            <div id="proj0" className="proj">
+              <h4>Color Generator</h4>
+            </div>
+          </a>
+          <a target="_blank" href="https://ryanbooth21.github.io/Js-time/">
+            <div id="proj1" className="proj">
+              <h4>Javascript Clock</h4>
+            </div>
+          </a>
+          <a target="_blank" href="https://ryanbooth21.github.io/Random-Quote-Generator/">
+            <div id="proj2" className="proj">
+              <h4>Quote Generator</h4>
+            </div>
+          </a>
+          </div>
+          <div className="projCol">
+            <a href="https://ryanbooth21.github.io/Ryan-Resume/">
+            <div id="proj3" className="proj">
+              <h4>Interactive Resume</h4>
+            </div>
+            </a>
+            <a target="_blank" href=" https://ryanbooth21.github.io/Royal-Robbins-Tribute-Page-FCC/">
+            <div  id="proj4" className="proj">
+              <h4>Tribute Page</h4>
+            </div>
+            </a>
+            <a target="_blank" href="https://ryanbooth21.github.io/What-type-of-climber-are-you-/">
+            <div id="proj5" className="proj">
+              <h4>Bootstrap Quiz</h4>
+            </div>
+            </a>
+            </div>
+          </div>
         </div>
-        <div className="col">
-          <a target="_blank" href="https://ryanbooth21.github.io/Random-Quote-Generator/"><h4>Random Quote Generator</h4>{quoteimg}</a>
-          <a target="_blank" href=" https://ryanbooth21.github.io/Royal-Robbins-Tribute-Page-FCC/"><h4>Tribute to Royal Robbins</h4>{Tributeimg}</a>
-          <a target="_blank" href="https://ryanbooth21.github.io/What-type-of-climber-are-you-/"><h4>What type of climber are you?</h4>{quizimg}</a>
-        </div>
-        </div>
-      </div>
     )
   }
 }
+// class Projects extends React.Component {
+//   render(){
+//     return(
+//     <div id="projectWrapper">
+//     <h2>My Projects</h2>
+//       <div id="projects">
+//         <div className="col">
+//           <a target="_blank" href="https://ryanbooth21.github.io/Ryan-Resume/"><h4>Interactive Resume</h4>{resumeimg}</a>
+//           <a target="_blank" href="https://ryanbooth21.github.io/Funky-Colors/"><h4>Random Color Generator</h4>{funkyimg}</a>
+//           <a target="_blank" href="https://ryanbooth21.github.io/Js-time/"><h4>Javascript Digital Clock</h4>{Jsclockimg}</a>
+//         </div>
+//         <div className="col">
+//           <a target="_blank" href="https://ryanbooth21.github.io/Random-Quote-Generator/"><h4>Random Quote Generator</h4>{quoteimg}</a>
+//           <a target="_blank" href=" https://ryanbooth21.github.io/Royal-Robbins-Tribute-Page-FCC/"><h4>Tribute to Royal Robbins</h4>{Tributeimg}</a>
+//           <a target="_blank" href="https://ryanbooth21.github.io/What-type-of-climber-are-you-/"><h4>What type of climber are you?</h4>{quizimg}</a>
+//         </div>
+//         </div>
+//       </div>
+//     )
+//   }
+// }
 class Footer extends React.Component {
   render(){
     return(
       <div id="footer">
         <div id="">
         <h1>Lets get in touch!</h1>
+          <div id="contact">
+          <p>Email: boothrc&#64;dukes.jmu.edu</p>
+          <p>(540)-638-8238</p>
+          </div>
         </div>
       </div>
     )
