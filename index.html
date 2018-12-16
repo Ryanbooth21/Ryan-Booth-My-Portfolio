@@ -9,7 +9,7 @@
   <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="portfolio.1.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="jquery.js"></script>
   <style>
@@ -72,7 +72,7 @@ class Skills extends React.Component {
         <div id="mySkills">
           <div className="skillSet">
             <h3 className="skillsTitle" >Languages</h3>
-            <div id="code">{Code_icon}</div>
+            <div className="icon"id="code">{Code_icon}</div>
               <ul>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -81,7 +81,7 @@ class Skills extends React.Component {
           </div>
           <div className="skillSet">
             <h3 className="skillsTitle">Frameworks</h3>
-            <div id="framework_icon">{Framework_icon}</div>
+            <div className="icon" id="framework_icon">{Framework_icon}</div>
               <ul>
                 <li>React</li>
                 <li>Bootstrap</li>
@@ -90,7 +90,7 @@ class Skills extends React.Component {
             </div>
           <div className="skillSet">
             <h3 className="skillsTitle">Design Tools</h3>
-            <div id="design_icon">{Design_icon}</div>
+            <div className="icon" id="design_icon">{Design_icon}</div>
               <ul>
                 <li>Wordpress</li>
                 <li>Adobe Illustrator</li>
@@ -122,9 +122,10 @@ class Projects extends React.Component {
   render(){
     return(
       <div id="projectWrapper">
-        <h2 id="projectsTitle">My Projects</h2>
+      <h2 id="projectsTitle">My Projects</h2>
         <div id="projects">
-          <div className="projCol">
+
+          <div className="projCol col1">
           <a target="_blank" href="https://ryanbooth21.github.io/Funky-Colors/">
             <div id="proj0" className="proj">
               <h4>Color Generator</h4>
@@ -141,7 +142,7 @@ class Projects extends React.Component {
             </div>
           </a>
           </div>
-          <div className="projCol">
+          <div className="projCol col2">
             <a href="https://ryanbooth21.github.io/Ryan-Resume/">
             <div id="proj3" className="proj">
               <h4>Interactive Resume</h4>

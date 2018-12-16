@@ -1,0 +1,228 @@
+*{
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  flex-direction: column;
+  font-family: 'Cabin Sketch', cursive;
+
+
+}
+
+html, body, #root, #wrapper,#banner,#aboutMe, #mySkills, .skillSet, #skills, #projects{
+  display: flex;
+}
+#root, #wrapper{
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+#banner{
+  background-color: White;
+  min-height: 100vh;
+}
+#banner{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#bannerText, #callToAction{
+  text-shadow: 3px 2px 8px #E2E2E2
+}
+#bannerText{
+font-size: 5em;
+}
+#callToAction{
+  font-size: 4em;
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+  padding: .3em;
+  box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.55);
+}
+#aboutMe{
+  min-height: 30em;
+  background-image: linear-gradient(40deg, #258EA6, #62BBC1);
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3em;
+}
+.aboutMeText{
+  text-align: center;
+  align-self: center;
+  font-size: .9em;
+  width: 100%;
+  padding: 1em 3em 2em 3em;
+}
+#code, #framework_icon, #design_icon{
+margin-bottom: 1em;
+}
+#Mytools{
+  font-size: 1.5em;
+}
+#mySkills{
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+}
+.skillSet{
+  margin: 0 .5em 0 .5em;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  font-size: .7em;
+}
+.skillsTitle{
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 1.5em;
+}
+#skills {
+  flex-direction: column;
+  align-items: center;
+}
+
+#skills{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: white;
+  width: 80vw;
+  flex-basis: auto;
+  max-height: 20em;
+  padding-bottom: 2em;
+  border-radius: 20px;
+  border-style: groove;
+  border-width: 1px;
+  border-color: #99E1D9;
+  box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.55);
+}
+#projectsTitle{
+  font-size: 3em;
+  margin-top: 1.5em;
+  margin-bottom: 2.7em;
+}
+#projectWrapper{
+  text-align: center;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-image: url('furley_bg.png');
+  padding-bottom: 10em;
+}
+#projects{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  height: auto;
+  margin-top: .5em;
+  width: 70vw;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: transparent;
+}
+.proj{
+display: flex;
+flex-direction: column;
+height: 10em;
+width: 21.367em;
+margin-bottom: 5em;
+border-radius: 15px;
+padding: .2em 0 .2em 0;
+box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.55);
+}
+#proj0{
+  background-image: url('funkycolors.JPG');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#proj1{
+  background-image: url('Jsclock.JPG');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#proj2{
+  background-image: url('quoteGen.JPG');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#proj3{
+  background-image: url('Resume.JPG');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#proj4{
+  background-image: url('Tribute.JPG');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#proj5{
+  background-image: url('typeofclimber.JPG');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h4{
+  align-items: flex-start;
+  margin-top: -1.5em;
+  font-size: 1.5em;
+}
+.proCol{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 90vw;
+  z-index: 4;
+}
+#footer{
+    height: 35vh;
+    width: 100vw;
+    background-color: #FAE7D7;
+    text-align: center;
+}
+@media (min-width: 700px) {
+  #projects{
+    flex-direction: row;
+    justify-content: center;
+
+  }
+  .col1{
+    margin-right: 1em;
+  }
+  .col2{
+    margin-left: 1em;
+  }
+  #bannerText{
+  font-size: 3em;
+  }
+  #callToAction{
+    font-size: 2em;
+  }
+  #Mytools{
+    font-size: 2em;
+    margin-bottom: 0em;
+  }
+  .skillSet{
+    font-size: 1em;
+  }
+  .aboutMeText{
+    width: 70%;
+  }
+}
